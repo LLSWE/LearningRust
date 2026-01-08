@@ -9,4 +9,3 @@ fn main() {
     let mut writter = BufWriter::new(stdout.lock());
     say(&message, width, &mut writter).unwrap();
 }
-

@@ -1,9 +1,8 @@
-use hashmap::simple;
-
+use crate::hashmap::map;
 pub mod hashmap;
 
 fn hash() {
-    simple();
+    map();
 }
 
 fn main() {

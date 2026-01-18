@@ -1,3 +1,5 @@
+mod trait_example;
+
 fn largest<T>(list: &[T]) -> &T {
     let largest = &list[0];
 

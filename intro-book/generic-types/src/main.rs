@@ -1,9 +1,9 @@
-fn largest(list: &[i32]) -> &i32 {
-    let mut largest = &list[0];
+fn largest<T>(list: &[T]) -> &T {
+    let largest = &list[0];
 
-    for item in list {
-        if item > largest {
-            largest = item;
+    for value in list {
+        if value > largest {
+            largest = value;
         }
     }
 
@@ -11,7 +11,10 @@ fn largest(list: &[i32]) -> &i32 {
 }
 
 fn main() {
-    let number_list = vec![10, 20, 30, 40, 50];
-    let result = largest(&number_list);
-    println!("{result}");
+    let list_int = vec![200, 100, 670, 11, 22];
+    let list_str = vec!["a", "b", "c", "d", "e"];
+    let result_int = largest(&list_int);
+    let result_str = largest(&list_str);
 }
+
+//Code does not compile, rust compiler suggest stricting generic type <T> with trait PartialOrd

@@ -49,5 +49,5 @@ fn main() {
         "The user with preference {:?} gets {:?}",
         user_pref2, giveaway2
     );
+    println!("vei na boa ");
 }
-

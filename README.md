@@ -2,3 +2,4 @@
 ## Fonte - Rust the programming language
 * rustup doc --book 
 
+.
